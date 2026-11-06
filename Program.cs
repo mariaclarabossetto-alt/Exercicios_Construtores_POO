@@ -23,3 +23,15 @@ n1.Somar(3,5);
 n1.Subtrair(3,5);
 n1.Multiplicar(3,5);
 Calculadora.Dividir(4,2);
+
+/*3. Propriedades com validação*/
+
+Veiculo v1 = new Veiculo();
+
+v1.Velocidade = 210;
+//Revisar 3
+
+/*4. Propriedades e controle de acesso*/
+
+
+
