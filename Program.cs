@@ -15,3 +15,11 @@ p2.Cidade = "São Caetano";
 
 p2.Apresentar();
 
+/*2. Métodos de instância e métodos estáticos*/
+
+Calculadora n1 = new Calculadora();
+
+n1.Somar(3,5);
+n1.Subtrair(3,5);
+n1.Multiplicar(3,5);
+Calculadora.Dividir(4,2);
