@@ -8,14 +8,34 @@ namespace ClassesObjetos
 {
     public class Funcionario
     {
-        public string Nome {get; set;}
-        public string Carga {get; set;}
-        public double Salario {get; private set;}
+        public string Nome { get; set; }
+        public string Cargo { get; set; }
+        public double Salario { get; private set; }
+
+        public Funcionario(string nome, string cargo, double salario)
+        {
+            Nome = nome;
+            Cargo = cargo;
+            Salario = salario;
+        }
 
         public void AumentarSalario(int percentual)
         {
-            Console.Write("Aumento");
-            Console.WriteLine(Salario*percentual);
+            if (percentual > 0)
+            {
+                double aumento = Salario * (percentual / 100);
+                Salario += aumento;
+            }
+            else
+            {
+                Console.Write("\nPercentual inválido\n");
+            }
+        }
+
+        public void ConsultarSalario()
+        {
+            Console.Write("--- Aumento final ---\n");
+            Console.WriteLine($"{Salario}");
         }
     }
 }

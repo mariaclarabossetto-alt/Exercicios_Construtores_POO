@@ -33,5 +33,15 @@ v1.Velocidade = 210;
 
 /*4. Propriedades e controle de acesso*/
 
+Funcionario f1 = new Funcionario("Heloísa","Chefe",5000.00);
+
+// f1.Salario = "2000.00"
+// O salario não pode ser mudado pois sua escrita é privada
+
+f1.AumentarSalario(200);
+f1.ConsultarSalario();
+
+
+
 
 
